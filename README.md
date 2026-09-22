@@ -2,7 +2,7 @@
 
 This project is based on IT Service Management (ITSM) data and focuses on understanding service desk tickets, SLA performance and customer satisfaction.
 
-I worked on this project using PostgreSQL and Python, with the analysis carried out in Jupyter Notebook.
+I worked on this project using PostgreSQL and Python, with the analysis carried out in Jupyter Notebook. I also created a Power BI dashboard to present the main findings in an interactive way.
 
 The main goal was to take the available ticket and SLA data, prepare it properly, explore it through different types of analysis, and understand what the data was telling us about service performance.
 
@@ -37,6 +37,7 @@ The data used for the analysis covers the period from **April 2021 to July 2021*
 - NumPy
 - Matplotlib
 - Jupyter Notebook
+- Power BI
 
 ---
 
@@ -94,6 +95,42 @@ I also explored customer satisfaction ratings and compared them with SLA-related
 
 ---
 
+## 📊 Power BI Dashboard
+
+To make the analysis more interactive, I created a Power BI dashboard using the cleaned ITSM dataset.
+
+The dashboard focuses on SLA performance, customer satisfaction and actual handling time.
+
+### Dashboard Includes
+
+#### KPI Cards
+
+- Total SLA Records
+- SLA Breached
+- SLA Met
+- SLA Breach Percentage
+- Average Customer Satisfaction (CSAT)
+- Average Actual Time
+- Average SLA Performance
+- Average SLA Variance
+
+#### Visual Analysis
+
+- Total SLA Records by SLA Status
+- Total SLA Records by SLA Type and SLA Status
+- Average CSAT by SLA Status
+- Average SLA Variance by SLA Status
+- Average SLA Performance by SLA Type
+
+#### Interactive Filters
+
+- SLA Type
+- SLA Status
+
+The dashboard was created to make the main analysis easier to understand through visual comparisons and interactive filtering.
+
+---
+
 ## 📊 Some Key Observations
 
 During the analysis, I found that **310,006 SLA records were breached**, while **49,994 were met**.
@@ -101,6 +138,8 @@ During the analysis, I found that **310,006 SLA records were breached**, while *
 The Resolution SLA showed a particularly noticeable pattern, with all **180,000 Resolution SLA records marked as breached** in this dataset.
 
 I also compared customer satisfaction across SLA statuses. The average CSAT was approximately **3.01** for both breached and met records, so the analysis did not show a strong difference in average customer satisfaction based on SLA status alone.
+
+The overall SLA breach percentage was approximately **86.11%**.
 
 These observations helped me understand why it is important to look at the actual data before making business conclusions.
 
@@ -134,6 +173,8 @@ Some of the main things I learned were:
 - How to create visualizations to understand data
 - How to work with SLA-related metrics
 - How to create useful derived columns
+- How to work with Power BI dashboards
+- How interactive filters can be used to explore data
 - Why data quality checks are important before analysis
 - How to connect technical analysis with a business problem
 
@@ -160,8 +201,10 @@ ITSM-Service-Desk-Ticket-Operations/
 ├── 10_Conclusion Report.pdf
 ├── 11_ITSM SQL Queries.pdf
 ├── 12_ITSM ER Diagram.png
+├── 13_ITSM DASHBOARD.pbix
 └── README.md
 ```
+
 🎯 Project Outcome
 
 Overall, this project gave me practical experience in working with database data, preparing data for analysis, performing EDA and finding business-related observations from ITSM ticket and SLA information.
